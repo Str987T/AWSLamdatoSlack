@@ -4,7 +4,7 @@ import json
 http = urllib3.PoolManager()
 
 def lambda_handler(event, context):
-    url = "https://hooks.slack.com/services/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"
+    url = "your webhook url"
     
     msgtype = event['Records'][0]['Sns']['Type']
     msgid = event['Records'][0]['Sns']['MessageId']
